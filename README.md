@@ -1,4 +1,4 @@
-# Banking Customer Analytics & Mortgage Risk Dashboard
+# Customer Analytics & Mortgage Risk Dashboard for Retail Banking
 
 ## Overview
 
@@ -6,11 +6,18 @@ This project explores customer behavior, mortgage exposure, and repayment risk w
 
 Using Tableau, I developed an executive dashboard designed to help decision-makers better understand customer tenure, mortgage portfolio exposure, repayment stress indicators, and retention opportunities. The dashboard combines customer demographics, lending data, credit health metrics, liquidity measures, and behavioral indicators to support proactive portfolio management.
 
+## Key Results
+
+- $9.88B mortgage portfolio analyzed
+- 17.55% of mortgage customers identified as showing elevated repayment stress indicators
+- 5.71% identified as highly stable retention candidates
+- Customer retention appears to weaken beyond the 6-7 year tenure mark
+
 **Interactive Dashboard:**
 
 https://public.tableau.com/app/profile/fred.rinaldo/viz/MIS771A3_17699162989440/Dashboard1
 
-This dashboard is best viewed in full screen.
+![Dashboard Overview](Images/Dashboard_Overview.png)
 
 ---
 
@@ -27,24 +34,6 @@ While mortgage lending remains a major source of revenue, it also represents a s
 - How to balance portfolio risk management with customer retention
 
 The objective was to transform customer and lending data into actionable insights that support executive decision-making.
-
----
-
-## Dashboard Overview
-
-![Dashboard Overview](Images/Dashboard_Overview.png)
-
-The dashboard follows a structured analytical narrative, moving from customer demographics and tenure analysis through to mortgage exposure, repayment stress, risk prioritization, and customer retention opportunities.
-
-### Portfolio Highlights
-
-| Metric | Value |
-|----------|----------|
-| Mortgage Customers | 13,997 |
-| Total Mortgage Exposure | $9.88 Billion |
-| Current Delinquency Rate | 1.3% |
-| Customers Showing Elevated Repayment Stress | 17.55% |
-| Highly Stable Mortgage Customers | 5.71% |
 
 ---
 
@@ -85,17 +74,27 @@ Key analytical dimensions included:
 
 The analysis focuses on identifying leading indicators of repayment stress rather than relying solely on historical defaults.
 
+### Highlights
+
+| Metric | Value |
+|----------|----------|
+| Mortgage Customers | 13,997 |
+| Total Mortgage Exposure | $9.88 Billion |
+| Current Delinquency Rate | 1.3% |
+| Customers Showing Elevated Repayment Stress | 17.55% |
+| Highly Stable Mortgage Customers | 5.71% |
+
 ---
 
 # Key Findings
 
-## 1. Customer Retention Appears to Weaken Beyond 6–7 Years
+## 1. Customer Retention Appears to Weaken Beyond 6-7 Years
 
 ![Customer Tenure Analysis](Images/Tenure_By_Age_Groups.png)
 
 Customer relationships generally strengthen over time, with older customer groups more frequently represented within longer-tenure categories.
 
-However, customer counts decline noticeably after the 6–7 year tenure band. Even among older customers, the 8–9 year tenure category never surpasses earlier tenure groups.
+However, customer counts decline noticeably after the 6-7 year tenure band. Even among older customers, the 8-9 year tenure category never surpasses earlier tenure groups.
 
 This suggests a potential retention bottleneck and highlights an opportunity to proactively engage customers before relationship maturity begins to decline.
 
@@ -185,7 +184,7 @@ Potential initiatives include:
 - Redraw fee waivers
 - Loyalty-based retention incentives
 
-This approach targets customers before the observed decline in retention beyond the 6–7 year tenure range.
+This approach targets customers before the observed decline in retention beyond the 6-7 year tenure range.
 
 ---
 
