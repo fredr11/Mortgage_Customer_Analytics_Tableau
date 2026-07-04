@@ -1,2 +1,2 @@
-# Mortgage_Risk_Analysis_Tableau
-Tableau dashboard analyzing mortgage portfolio risk, customer leverage, repayment stress indicators, and lending exposure.
+# Mortgage Customer Analytics
+Executive Tableau dashboard analyzing customer tenure, mortgage exposure, repayment risk, and retention opportunities for a retail banking portfolio.
