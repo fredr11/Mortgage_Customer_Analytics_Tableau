@@ -6,16 +6,7 @@ This project explores customer behavior, mortgage exposure, and repayment risk w
 
 Using Tableau, I developed an executive dashboard designed to help decision-makers better understand customer tenure, mortgage portfolio exposure, repayment stress indicators, and retention opportunities. The dashboard combines customer demographics, lending data, credit health metrics, liquidity measures, and behavioral indicators to support proactive portfolio management.
 
-## Key Results
-
-- $9.88B mortgage portfolio analyzed
-- 17.55% of mortgage customers identified as showing elevated repayment stress indicators
-- 5.71% identified as highly stable retention candidates
-- Customer retention appears to weaken beyond the 6-7 year tenure mark
-
-**Interactive Dashboard:**
-
-https://public.tableau.com/app/profile/fred.rinaldo/viz/MIS771A3_17699162989440/Dashboard1
+[Live Dashboard](https://public.tableau.com/app/profile/fred.rinaldo/viz/MIS771A3_17699162989440/Dashboard1)
 
 ![Dashboard Overview](Images/Dashboard_Overview.png)
 
@@ -39,7 +30,7 @@ The objective was to transform customer and lending data into actionable insight
 
 ## Dataset
 
-The analysis was performed using a synthetic retail banking dataset containing customer demographic, financial, lending, engagement, and risk-related information.
+The analysis was developed using a synthetic retail banking dataset containing customer demographic, financial, lending, engagement, and risk-related information.
 
 The dataset includes:
 
