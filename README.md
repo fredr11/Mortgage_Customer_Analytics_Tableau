@@ -74,6 +74,32 @@ Key analytical dimensions included:
 
 The analysis focuses on identifying leading indicators of repayment stress rather than relying solely on historical defaults.
 
+---
+
+## Calculated Fields & Segment Definitions
+
+The dashboard relies on several calculated fields built on top of the raw HBA dataset to translate raw customer and lending data into decision-ready segments.
+
+| Field | Type | Definition |
+|---|---|---|
+| **Age Bracket** | Categorical (nominal) | Customers grouped into 5-year age bins (23-27, 28-32, ... 63-67), with a final open-ended "68+" bracket. |
+| **Credit Score Health** | Categorical (ordinal) | Credit score bucketed as: `<500` = Very Poor, `500-649` = Poor, `650-749` = Medium, `750-849` = High, `850+` = Very High. |
+| **Leverage Level** | Categorical (ordinal) | Leverage = (Home Loan Balance + Credit Card Balance + Car Loan Balance) / Estimated Salary. Bucketed into: `<3x` = 0-2x, `3-5.9x` = 3-5x, `6-8.9x` = 6-8x, `9-11.9x` = 9-11x, `12-14.9x` = 12-14x, `15x+` = 15x+. |
+| **Liquidity Buffer** | Categorical (ordinal) | Liquidity = (Savings Balance + Checking Balance) / (Estimated Salary / 12), representing months of repayment coverage. Bucketed into: `<1` = "< 1 Month", `1-2.9` = "1-3 Months", `3-5.9` = "3-6 Months", `6+` = "6+ Months". |
+| **Relative Delinquency Index** | Numerical (continuous) | Segment Delinquency Rate ÷ Portfolio-Wide Delinquency Rate. An index of 1.0 = average risk; above 1.0 indicates elevated relative risk. |
+| **Delinquency Rate** | Numerical (continuous) | Sum of delinquency flags within a segment ÷ total delinquency flags. |
+| **% of Mortgage Portfolio Balance** | Numerical (continuous) | Sum of Home Loan Balances in a segment ÷ total portfolio Home Loan Balance. |
+| **% of Total Customer Count** | Numerical (continuous) | Count of Customer IDs in a segment ÷ total Customer IDs. |
+| **Lending Product** | Categorical (nominal) | Derived filter field: `IF Home Loan = 1 THEN "Home Loan" ELSEIF Has Credit Card = 1 THEN "Credit Card" ELSEIF Has Car Loan = 1 THEN "Car Loan" ELSE "No Lending"`. |
+| **Industry Risk** | Categorical (ordinal) | Coded risk level aliased for readability: `0` = Low, `1` = Medium, `2` = High. |
+| **Tenure Years** | Categorical (ordinal) | Customer relationship tenure grouped into 2-year bands: 0-1, 2-3, 4-5, 6-7, 8-9. |
+
+### How this maps to the dashboard's headline segments
+
+- **"Elevated Repayment Stress"** customers are those falling into higher **Relative Delinquency Index** bands combined with weaker **Liquidity Buffer** and **Credit Score Health** categories.
+- **"Highly Stable"** customers are defined by **High/Very High Credit Score Health**, a **Liquidity Buffer of 3+ months**, no delinquency flag, and an active lending relationship.
+- **Mid-risk, high-exposure segments** are identified by cross-referencing **% of Mortgage Portfolio Balance** against **Relative Delinquency Index**, isolating segments that are large in dollar exposure but only moderately elevated in relative risk — rather than small extreme outliers.
+
 ### Highlights
 
 | Metric | Value |
@@ -257,22 +283,24 @@ By combining customer tenure, mortgage exposure, liquidity position, leverage, c
 ## Repository Structure
 
 ```text
-Data
-├── Data Dictionary.csv
-└── Sample Dataset.csv
-
-Images
-├── Dashboard_Overview.png
-├── High-Risk_Segments_1.png
-├── High-Risk_Segments_2.png
-├── High-Risk_Segments_2.png
-├── Mortgage_Exposure_Leverage.png
-├── Mortgage_Risk_Concentration.png
-├── Repayment_Stress_Indicators.png
-├── Stable_Customers.png
-└── Tenure_By_Age_Groups.png
-
-README.md
+├── Data
+│   ├── Data Dictionary.csv
+│   └── Sample Dataset.csv
+│   
+├── Images
+│   ├── Dashboard_Overview.png
+│   ├── High-Risk_Segments_1.png
+│   ├── High-Risk_Segments_2.png
+│   ├── Mortgage_Exposure_Leverage.png
+│   ├── Mortgage_Risk_Concentration.png
+│   ├── Repayment_Stress_Indicators.png
+│   ├── Stable_Customers.png
+│   └── Tenure_By_Age_Groups.png
+│
+├── Tableau
+│   └── Mortgage Customer Analytics.twb
+│   
+└── README.md
 ```
 
 ---
