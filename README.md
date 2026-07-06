@@ -8,7 +8,7 @@ Using Tableau, I developed an executive dashboard designed to help decision-make
 
 [Live Dashboard](https://public.tableau.com/app/profile/fred.rinaldo/viz/MIS771A3_17699162989440/Dashboard1)
 
-![Dashboard Overview](Images/Dashboard_Overview.png)
+![Dashboard Overview](images/dashboard_overview.png)
 
 ---
 
@@ -107,7 +107,7 @@ The dashboard relies on several calculated fields built on top of the raw HBA da
 
 ## 1. Customer Retention Appears to Weaken Beyond 6-7 Years
 
-![Customer Tenure Analysis](Images/Tenure_By_Age_Groups.png)
+![Customer Tenure Analysis](images/tenure_by_age_bracket.png)
 
 Customer relationships generally strengthen over time, with older customer groups more frequently represented within longer-tenure categories.
 
@@ -119,7 +119,7 @@ This suggests a potential retention bottleneck and highlights an opportunity to 
 
 ## 2. Mortgage Exposure Is Concentrated Within Structurally Vulnerable Segments
 
-![Mortgage Exposure & Leverage](Images/Mortgage_Exposure_Leverage.png)
+![Mortgage Exposure & Leverage](images/mortgage_exposure_leverage.png)
 
 Customers with poor credit score health and liquidity buffers of only one to six months account for approximately **15.22% of total mortgage balances**.
 
@@ -131,7 +131,7 @@ This finding highlights the importance of evaluating both exposure size and cust
 
 ## 3. Repayment Stress Is Concentrated in Common Customer Segments
 
-![Mortgage Repayment Stress Indicators](Images/Repayment_Stress_Indicators.png)
+![Mortgage Repayment Stress Indicators](images/repayment_stress_indicators.png)
 
 Approximately **17.55% of mortgage customers** exhibit characteristics associated with elevated repayment stress.
 
@@ -143,7 +143,7 @@ Customers employed within higher-risk industries consistently showed higher rela
 
 ## 4. Liquidity Buffers Strongly Influence Risk Outcomes
 
-![Concentration of Mortgage Risk and Liquidity](Images/Mortgage_Risk_Concentration.png)
+![Concentration of Mortgage Risk and Liquidity](images/mortgage_risk_concentration.png)
 
 Liquidity emerged as one of the strongest differentiators of repayment resilience.
 
@@ -155,7 +155,7 @@ The findings suggest that liquidity plays a critical role in absorbing short-ter
 
 ## 5. The Greatest Portfolio Risk Exists Where Exposure and Stress Intersect
 
-![High-Risk Mortgage Segments](Images/High-Risk_Segments_1.png)
+![High-Risk Mortgage Segments](images/high_risk_segments_1.png)
 
 Portfolio risk is not evenly distributed across the mortgage book.
 
@@ -173,7 +173,7 @@ These groups represent the greatest potential downside to portfolio performance 
 
 ## 6. Stable Customers Represent a Valuable Retention Opportunity
 
-![Distribution of Stable Mortgage Customers](Images/Stable_Customers.png)
+![Distribution of Stable Mortgage Customers](images/stable_customers.png)
 
 The analysis identified a distinct segment of financially stable mortgage customers characterized by:
 
@@ -274,22 +274,22 @@ By combining customer tenure, mortgage exposure, liquidity position, leverage, c
 ## Repository Structure
 
 ```text
-├── Data
-│   ├── Data Dictionary.csv
-│   └── Sample Dataset.csv
+├── data/
+│   ├── data_dictionary.csv
+│   └── sample_dataset.csv
 │   
-├── Images
-│   ├── Dashboard_Overview.png
-│   ├── High-Risk_Segments_1.png
-│   ├── High-Risk_Segments_2.png
-│   ├── Mortgage_Exposure_Leverage.png
-│   ├── Mortgage_Risk_Concentration.png
-│   ├── Repayment_Stress_Indicators.png
-│   ├── Stable_Customers.png
-│   └── Tenure_By_Age_Groups.png
+├── images/
+│   ├── dashboard_overview.png
+│   ├── high_risk_segments_1.png
+│   ├── high_risk_segments_2.png
+│   ├── mortgage_exposure_leverage.png
+│   ├── mortgage_risk_concentration.png
+│   ├── repayment_stress_indicators.png
+│   ├── stable_customers.png
+│   └── tenure_by_age_bracket.png
 │
-├── Tableau
-│   └── Mortgage Customer Analytics.twb
+├── tableau/
+│   └── mortgage_customer_analytics.twb
 │   
 └── README.md
 ```
@@ -298,4 +298,4 @@ By combining customer tenure, mortgage exposure, liquidity position, leverage, c
 
 ## Disclaimer
 
-This project was completed as part of postgraduate Business Analytics coursework and uses a fictional banking scenario with synthetic customer data for educational purposes.
+This project was completed as part of postgraduate Business Analytics coursework and uses a banking scenario with adapted customer data.
