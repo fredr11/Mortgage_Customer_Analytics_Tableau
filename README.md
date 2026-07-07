@@ -103,9 +103,9 @@ The dashboard relies on several calculated fields built on top of the raw HBA da
 
 ---
 
-# Key Findings
+## Key Findings
 
-## 1. Customer Retention Appears to Weaken Beyond 6-7 Years
+### 1. Customer Retention Appears to Weaken Beyond 6-7 Years
 
 ![Customer Tenure Analysis](images/tenure_by_age_bracket.png)
 
@@ -117,7 +117,7 @@ This suggests a potential retention bottleneck and highlights an opportunity to 
 
 ---
 
-## 2. Mortgage Exposure Is Concentrated Within Structurally Vulnerable Segments
+### 2. Mortgage Exposure Is Concentrated Within Structurally Vulnerable Segments
 
 ![Mortgage Exposure & Leverage](images/mortgage_exposure_leverage.png)
 
@@ -129,7 +129,7 @@ This finding highlights the importance of evaluating both exposure size and cust
 
 ---
 
-## 3. Repayment Stress Is Concentrated in Common Customer Segments
+### 3. Repayment Stress Is Concentrated in Common Customer Segments
 
 ![Mortgage Repayment Stress Indicators](images/repayment_stress_indicators.png)
 
@@ -141,7 +141,7 @@ Customers employed within higher-risk industries consistently showed higher rela
 
 ---
 
-## 4. Liquidity Buffers Strongly Influence Risk Outcomes
+### 4. Liquidity Buffers Strongly Influence Risk Outcomes
 
 ![Concentration of Mortgage Risk and Liquidity](images/mortgage_risk_concentration.png)
 
@@ -153,7 +153,7 @@ The findings suggest that liquidity plays a critical role in absorbing short-ter
 
 ---
 
-## 5. The Greatest Portfolio Risk Exists Where Exposure and Stress Intersect
+### 5. The Greatest Portfolio Risk Exists Where Exposure and Stress Intersect
 
 ![High-Risk Mortgage Segments](images/high_risk_segments_1.png)
 
@@ -171,7 +171,7 @@ These groups represent the greatest potential downside to portfolio performance 
 
 ---
 
-## 6. Stable Customers Represent a Valuable Retention Opportunity
+### 6. Stable Customers Represent a Valuable Retention Opportunity
 
 ![Distribution of Stable Mortgage Customers](images/stable_customers.png)
 
@@ -188,9 +188,9 @@ These customers represent attractive targets for relationship-building, retentio
 
 ---
 
-# Recommendations
+## Recommendations
 
-## Recommendation 1: Introduce Tenure-Based Mortgage Review Programs
+### Recommendation 1: Introduce Tenure-Based Mortgage Review Programs
 
 Develop structured relationship reviews beginning at four years of tenure and increasing at subsequent milestones.
 
@@ -205,7 +205,7 @@ This approach targets customers before the observed decline in retention beyond 
 
 ---
 
-## Recommendation 2: Implement Proactive Early-Intervention Support
+### Recommendation 2: Implement Proactive Early-Intervention Support
 
 Identify customers exhibiting:
 
@@ -218,7 +218,7 @@ Provide supportive outreach before repayment difficulties materialize through fi
 
 ---
 
-## Recommendation 3: Prioritize Mid-Risk, High-Exposure Segments
+### Recommendation 3: Prioritize Mid-Risk, High-Exposure Segments
 
 Focus monitoring resources on segments that combine elevated repayment stress indicators with significant mortgage balances.
 
